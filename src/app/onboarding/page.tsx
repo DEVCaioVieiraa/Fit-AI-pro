@@ -4,7 +4,30 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { ArrowLeft, ArrowRight, CheckCircle, AlertCircle } from 'lucide-react';
 import { OnboardingData, ExperienceLevel, Goal, TrainingEnvironment, DietType } from '@/lib/types';
-import { gymEquipment, homeEquipment, commonRestrictions, commonAllergies } from '@/lib/fitness-data';
+import { gymEquipment, homeEquipment } from '@/lib/fitness-data';
+
+// Constantes locais para onboarding
+const commonRestrictions = [
+  'Problemas na lombar',
+  'Problemas na coluna',
+  'Problemas no joelho',
+  'Problemas no ombro',
+  'Hérnia de disco',
+  'Tendinite',
+  'Artrose',
+  'Pressão alta'
+];
+
+const commonAllergies = [
+  'Lactose',
+  'Glúten',
+  'Amendoim',
+  'Frutos do mar',
+  'Ovo',
+  'Soja',
+  'Nozes',
+  'Peixe'
+];
 
 const steps = [
   'Dados Pessoais',

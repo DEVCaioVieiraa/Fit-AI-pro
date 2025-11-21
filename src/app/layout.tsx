@@ -5,6 +5,8 @@ import Script from "next/script";
 import "./globals.css";
 // Import all available fonts for AI usage
 import "../lib/fonts";
+// Suprime avisos de HMR no console
+import "../lib/suppress-hmr-warnings";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
